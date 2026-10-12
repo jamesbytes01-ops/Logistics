@@ -1,0 +1,324 @@
+.card {
+  background-color: #ffffff;
+  border: 1px solid var(--color-border-subtle);
+  border-radius: var(--radius-md);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  transition: all var(--transition-normal);
+  position: relative;
+  box-shadow: var(--shadow-sm);
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-elevated);
+  border-color: var(--color-border-medium);
+}
+
+.cardHeader {
+  padding: 20px 24px 16px;
+  background: linear-gradient(180deg, #f8fafc 0%, #ffffff 100%);
+  border-bottom: 1px solid #f1f5f9;
+  position: relative;
+}
+
+.badgeRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 14px;
+}
+
+.categoryTag {
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-navy-700);
+  background-color: #e2e8f0;
+  padding: 3px 8px;
+  border-radius: var(--radius-sm);
+}
+
+.productBadge {
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-amber-700);
+  background-color: var(--color-amber-100);
+  border: 1px solid rgba(217, 119, 6, 0.25);
+  padding: 3px 8px;
+  border-radius: var(--radius-sm);
+}
+
+.imagePlaceholder {
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 8px;
+  background: linear-gradient(135deg, #0c1a30 0%, #172554 100%);
+  border-radius: var(--radius-sm);
+  color: #ffffff;
+  position: relative;
+  overflow: hidden;
+}
+
+.imageGraphic {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+.imageLogoBrand {
+  font-size: 0.82rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  color: #38bdf8;
+  text-transform: uppercase;
+}
+
+.imageTitle {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.imageWatermark {
+  position: absolute;
+  right: -10px;
+  bottom: -15px;
+  opacity: 0.08;
+  color: #ffffff;
+}
+
+.productTitle {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--color-navy-950);
+  margin-top: 10px;
+  margin-bottom: 6px;
+  line-height: 1.3;
+}
+
+.productTitleLink {
+  color: inherit;
+  transition: color var(--transition-fast);
+}
+
+.productTitleLink:hover {
+  color: var(--color-amber-600);
+}
+
+.metaRow {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+  margin-bottom: 4px;
+}
+
+.metaItem {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-weight: 600;
+  color: var(--color-navy-800);
+}
+
+.cardBody {
+  padding: 16px 24px;
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+}
+
+.description {
+  font-size: 0.86rem;
+  color: var(--color-text-secondary);
+  line-height: 1.55;
+  margin-bottom: 16px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.osSection {
+  margin-bottom: 16px;
+}
+
+.osLabel {
+  display: block;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-text-muted);
+  margin-bottom: 6px;
+}
+
+.osTags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.osTag {
+  background-color: #f1f5f9;
+  color: var(--color-navy-900);
+  font-size: 0.73rem;
+  font-weight: 600;
+  padding: 2px 7px;
+  border-radius: var(--radius-sm);
+  border: 1px solid #e2e8f0;
+}
+
+.featureList {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 20px;
+  flex: 1 1 auto;
+}
+
+.featureItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  font-size: 0.82rem;
+  color: var(--color-text-secondary);
+  line-height: 1.4;
+}
+
+.featureIcon {
+  color: var(--color-status-success);
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.cardFooter {
+  padding: 16px 24px 20px;
+  border-top: 1px solid #f1f5f9;
+  background-color: #fafbfc;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.priceRow {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.priceWrapper {
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+}
+
+.priceCurrency {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--color-navy-950);
+}
+
+.priceAmount {
+  font-size: 1.65rem;
+  font-weight: 800;
+  color: var(--color-navy-950);
+  letter-spacing: -0.02em;
+}
+
+.pricePeriod {
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+}
+
+.licenseTermBadge {
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: #0369a1;
+  background-color: #f0f9ff;
+  border: 1px solid #bae6fd;
+  padding: 2px 6px;
+  border-radius: var(--radius-sm);
+}
+
+.actionsRow {
+  display: grid;
+  grid-template-columns: 1fr 1.3fr;
+  gap: 10px;
+}
+
+.detailsBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 12px;
+  font-size: 0.86rem;
+  font-weight: 600;
+  color: var(--color-navy-900);
+  background-color: #ffffff;
+  border: 1px solid var(--color-border-medium);
+  border-radius: var(--radius-sm);
+  transition: all var(--transition-fast);
+  text-align: center;
+}
+
+.detailsBtn:hover {
+  background-color: #f1f5f9;
+  border-color: var(--color-navy-700);
+}
+
+.addToCartBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 10px 14px;
+  font-size: 0.86rem;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: var(--color-amber-500);
+  border: 1px solid var(--color-amber-600);
+  border-radius: var(--radius-sm);
+  transition: all var(--transition-fast);
+  cursor: pointer;
+}
+
+.addToCartBtn:hover {
+  background-color: var(--color-amber-600);
+  box-shadow: 0 2px 6px rgba(180, 83, 9, 0.3);
+}
+
+.addedNotice {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: var(--color-status-success);
+  color: #ffffff;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: var(--radius-pill);
+  box-shadow: var(--shadow-md);
+  animation: fadeInOut 2s ease-in-out;
+  z-index: 10;
+}
+
+@keyframes fadeInOut {
+  0% { opacity: 0; transform: translateY(-4px); }
+  15% { opacity: 1; transform: translateY(0); }
+  85% { opacity: 1; transform: translateY(0); }
+  100% { opacity: 0; transform: translateY(-4px); }
+}

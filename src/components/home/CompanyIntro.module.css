@@ -1,0 +1,143 @@
+.sectionWrapper {
+  padding: 80px 0;
+  background-color: #ffffff;
+}
+
+.layoutGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 56px;
+  align-items: center;
+}
+
+.contentCol {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.kicker {
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-amber-600);
+}
+
+.heading {
+  font-size: 2.2rem;
+  font-weight: 800;
+  line-height: 1.25;
+  color: var(--color-navy-950);
+}
+
+.leadText {
+  font-size: 1.05rem;
+  color: var(--color-text-secondary);
+  line-height: 1.7;
+}
+
+.bodyText {
+  font-size: 0.95rem;
+  color: var(--color-text-muted);
+  line-height: 1.7;
+}
+
+.infoGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-top: 12px;
+}
+
+.infoCard {
+  background-color: var(--color-bg-canvas);
+  border: 1px solid var(--color-border-subtle);
+  border-radius: var(--radius-sm);
+  padding: 18px;
+}
+
+.infoCardTitle {
+  font-size: 0.82rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--color-navy-900);
+  margin-bottom: 6px;
+}
+
+.infoCardText {
+  font-size: 0.88rem;
+  color: var(--color-text-secondary);
+  line-height: 1.5;
+}
+
+.visualCol {
+  position: relative;
+}
+
+.visualBox {
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+  border-radius: var(--radius-lg);
+  padding: 40px;
+  color: #ffffff;
+  border: 1px solid #334155;
+  box-shadow: var(--shadow-lg);
+}
+
+.visualHeader {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 24px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.visualTitle {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.visualPoints {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.visualPoint {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  font-size: 0.9rem;
+  color: #cbd5e1;
+  line-height: 1.5;
+}
+
+.checkIcon {
+  color: #fbbf24;
+  margin-top: 3px;
+  flex-shrink: 0;
+}
+
+.addressNotice {
+  margin-top: 28px;
+  padding: 16px;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-left: 3px solid var(--color-amber-500);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  font-size: 0.85rem;
+  color: #e2e8f0;
+}
+
+@media (max-width: 991px) {
+  .layoutGrid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .heading {
+    font-size: 1.9rem;
+  }
+}

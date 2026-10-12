@@ -1,0 +1,77 @@
+.sectionWrapper {
+  padding: 80px 0;
+  background-color: #ffffff;
+}
+
+.header {
+  text-align: center;
+  max-width: 720px;
+  margin: 0 auto 56px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.kicker {
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-amber-600);
+}
+
+.heading {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: var(--color-navy-950);
+}
+
+.subtext {
+  font-size: 1.05rem;
+  color: var(--color-text-secondary);
+}
+
+.valuesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 28px;
+}
+
+.valueCard {
+  background-color: var(--color-bg-canvas);
+  border: 1px solid var(--color-border-subtle);
+  border-radius: var(--radius-md);
+  padding: 32px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  transition: all var(--transition-fast);
+}
+
+.valueCard:hover {
+  border-color: var(--color-border-medium);
+  box-shadow: var(--shadow-md);
+}
+
+.iconBox {
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius-sm);
+  background-color: var(--color-navy-900);
+  color: #fbbf24;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.valueTitle {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--color-navy-950);
+}
+
+.valueDesc {
+  font-size: 0.9rem;
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+}

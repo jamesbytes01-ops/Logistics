@@ -1,0 +1,76 @@
+.sectionWrapper {
+  padding: 80px 0;
+  background-color: #ffffff;
+}
+
+.box {
+  background: linear-gradient(135deg, #f8fafc 0%, #edf2f7 100%);
+  border: 1px solid var(--color-border-subtle);
+  border-radius: var(--radius-lg);
+  padding: 56px 48px;
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.heading {
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--color-navy-950);
+  margin-bottom: 12px;
+}
+
+.description {
+  font-size: 1rem;
+  color: var(--color-text-secondary);
+  line-height: 1.65;
+  margin-bottom: 24px;
+}
+
+.addressCard {
+  background-color: #ffffff;
+  border: 1px solid var(--color-border-subtle);
+  border-radius: var(--radius-sm);
+  padding: 24px;
+  box-shadow: var(--shadow-sm);
+}
+
+.addressCardTitle {
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--color-amber-600);
+  margin-bottom: 8px;
+}
+
+.companyName {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--color-navy-950);
+  margin-bottom: 4px;
+}
+
+.street {
+  font-size: 0.95rem;
+  color: var(--color-text-secondary);
+}
+
+.cityState {
+  font-size: 0.95rem;
+  color: var(--color-text-secondary);
+  margin-bottom: 16px;
+}
+
+.actions {
+  display: flex;
+  gap: 12px;
+}
+
+@media (max-width: 991px) {
+  .box {
+    grid-template-columns: 1fr;
+    padding: 36px 24px;
+  }
+}

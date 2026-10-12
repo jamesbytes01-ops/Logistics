@@ -1,0 +1,146 @@
+.footer {
+  background-color: var(--color-navy-950);
+  color: #94a3b8;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  margin-top: auto;
+}
+
+.footerMain {
+  padding: 64px 0 48px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1.2fr;
+  gap: 40px;
+}
+
+.brandCol {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.brandHeading {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #ffffff;
+}
+
+.brandLogoMark {
+  width: 36px;
+  height: 36px;
+  background: linear-gradient(135deg, var(--color-amber-500), #92400e);
+  color: #ffffff;
+  font-weight: 800;
+  font-size: 1rem;
+  letter-spacing: 0.05em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-sm);
+}
+
+.brandName {
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+}
+
+.brandDescription {
+  font-size: 0.88rem;
+  line-height: 1.6;
+  color: #94a3b8;
+  max-width: 360px;
+}
+
+.addressBox {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 14px;
+  border-radius: var(--radius-sm);
+  background-color: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  font-size: 0.84rem;
+  color: #cbd5e1;
+  max-width: 360px;
+}
+
+.addressLabel {
+  font-weight: 700;
+  color: var(--color-amber-500);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.colHeading {
+  color: #ffffff;
+  font-size: 0.95rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  letter-spacing: 0.02em;
+}
+
+.linkList {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.link {
+  color: #94a3b8;
+  font-size: 0.88rem;
+  transition: color var(--transition-fast);
+}
+
+.link:hover {
+  color: var(--color-amber-500);
+}
+
+.disclaimerSection {
+  background-color: #050b14;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  padding: 24px 0;
+  font-size: 0.8rem;
+  line-height: 1.6;
+  color: #64748b;
+}
+
+.disclaimerText {
+  margin-bottom: 12px;
+}
+
+.bottomBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding-top: 16px;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  font-size: 0.78rem;
+  color: #64748b;
+}
+
+@media (max-width: 991px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+  }
+}
+
+@media (max-width: 640px) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .footerMain {
+    padding: 48px 0 32px;
+  }
+}
