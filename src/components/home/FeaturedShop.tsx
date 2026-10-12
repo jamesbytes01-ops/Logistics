@@ -28,16 +28,6 @@ export function FeaturedShop() {
               Explore verified Webroot antivirus, VPN, and device security subscriptions. Cloud-based protection with rapid scan speeds, low system resource footprint, and authentic retail licensing.
             </p>
           </div>
-
-          <div>
-            <Link href="/webroot-antivirus" className="btn btnSecondary">
-              Browse All 15 Offerings
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                <line x1="5" y1="12" x2="19" y2="12" />
-                <polyline points="12 5 19 12 12 19" />
-              </svg>
-            </Link>
-          </div>
         </div>
 
         {/* Product Cards Grid */}
@@ -55,9 +45,6 @@ export function FeaturedShop() {
               Our complete catalog features 15 distinct, verified Webroot subscriptions spanning single-PC antivirus, multi-device household plans, encrypted VPN tunnels, and commercial business endpoint protection.
             </p>
           </div>
-          <Link href="/webroot-antivirus" className="btn btnPrimary">
-            View Complete Software Catalog
-          </Link>
         </div>
       </div>
     </section>

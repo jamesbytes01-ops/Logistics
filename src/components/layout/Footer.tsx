@@ -80,8 +80,11 @@ export function Footer() {
           </div>
 
           <div className={styles.disclaimerCardBody}>
+            <p style={{ fontWeight: 600, color: "var(--text-primary)" }}>
+              &copy; 2026 Digifortship. Owned and Operated by PG SPECIALIZED LOGISTICS LLC. All Rights Reserved.
+            </p>
             <p>
-              <strong>Independent Retailer &amp; Trademark Attribution:</strong> PG SPECIALIZED LOGISTICS LLC is an independent commercial company and an independent reseller/retailer of authentic computer software products. Webroot, Webroot SecureAnywhere, BrightCloud, and associated logos are registered trademarks of OpenText Corporation. PG Specialized Logistics LLC is not directly affiliated with, sponsored by, or endorsed by OpenText Corporation.
+              <strong>Independent Retailer &amp; Trademark Attribution:</strong> Digifortship is owned and operated by PG SPECIALIZED LOGISTICS LLC. PG SPECIALIZED LOGISTICS LLC is an independent commercial company and an independent reseller/retailer of authentic computer software products. Webroot, Webroot SecureAnywhere, BrightCloud, and associated logos are registered trademarks of OpenText Corporation. Digifortship and PG Specialized Logistics LLC are not directly affiliated with, sponsored by, or endorsed by OpenText Corporation.
             </p>
             <p>
               <strong>Authentic Software Licensing &amp; Delivery:</strong> All software subscriptions sold through this website are genuine, legitimate, and sourced through verified commercial distribution channels. Product keys and activation instructions are delivered electronically upon order processing and are governed by the respective software publisher&apos;s End User License Agreement (EULA).
@@ -98,7 +101,7 @@ export function Footer() {
         <div className="container">
           <div className={styles.bottomBar}>
             <div>
-              &copy; {currentYear} {COMPANY_INFO.name}. All rights reserved.
+              &copy; 2026 Digifortship. Owned and Operated by PG SPECIALIZED LOGISTICS LLC. All Rights Reserved.
             </div>
             <div>
               Registered Corporate Address: {COMPANY_INFO.address.formatted}

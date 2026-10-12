@@ -94,8 +94,8 @@ export function Header() {
               </Link>
             )}
 
-            <Link href="/webroot-antivirus" className={styles.shopCtaButton}>
-              Webroot Antivirus
+            <Link href="/contact" className={styles.shopCtaButton}>
+              Contact Us
             </Link>
 
             {/* Mobile Menu Button */}
@@ -177,12 +177,12 @@ export function Header() {
               <span>View Cart ({itemCount})</span>
             </Link>
             <Link
-              href="/webroot-antivirus"
+              href="/contact"
               onClick={closeMenu}
               className={styles.shopCtaButton}
               style={{ justifyContent: "center" }}
             >
-              Browse Webroot Antivirus
+              Contact Our Logistics Team
             </Link>
           </div>
         </div>
