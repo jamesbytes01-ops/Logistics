@@ -29,7 +29,7 @@ export function ProductDetailView({ product }: ProductDetailViewProps) {
           <nav className={styles.breadcrumbs} aria-label="Breadcrumb">
             <Link href="/" className={styles.breadcrumbLink}>Home</Link>
             <span>/</span>
-            <Link href="/shop" className={styles.breadcrumbLink}>Webroot Store</Link>
+            <Link href="/webroot-antivirus" className={styles.breadcrumbLink}>Webroot Software</Link>
             <span>/</span>
             <span aria-current="page">{product.name}</span>
           </nav>
@@ -41,14 +41,29 @@ export function ProductDetailView({ product }: ProductDetailViewProps) {
           {/* Visual Presentation Column */}
           <div className={styles.imageCol}>
             <div className={styles.productGraphicHero}>
-              <span className={styles.brandLabel}>WEBROOT &reg; SECURITY</span>
-              <h2 className={styles.graphicTitle}>{product.name.split("(")[0]}</h2>
-              <span className={styles.graphicBadge}>{product.deviceLabel} &bull; {product.duration}</span>
+              <div className={styles.boxVisualPresentation}>
+                <img
+                  src={product.image || "/images/products/webroot-antivirus.png"}
+                  alt={`${product.name} retail packaging`}
+                  className={styles.heroBoxImage}
+                />
+              </div>
 
-              {/* Watermark icon */}
-              <svg className={styles.watermarkShield} width="180" height="180" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
-              </svg>
+              <div className={styles.visualMetaRow}>
+                <div className={styles.genuineSealBadge}>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                    <polyline points="9 12 11 14 15 10" />
+                  </svg>
+                  <span>100% Genuine Retail License</span>
+                </div>
+                <div className={styles.instantDeliveryPill}>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                    <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
+                  </svg>
+                  <span>Instant Electronic Key Delivery</span>
+                </div>
+              </div>
             </div>
           </div>
 

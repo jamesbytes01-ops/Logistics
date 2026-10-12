@@ -32,7 +32,7 @@ export function HeroSection() {
                   <polyline points="12 5 19 12 12 19" />
                 </svg>
               </Link>
-              <Link href="/shop" className="btn btnOutlineWhite">
+              <Link href="/webroot-antivirus" className="btn btnOutlineWhite">
                 Shop Webroot Products
               </Link>
             </div>

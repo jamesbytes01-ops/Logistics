@@ -1,6 +1,22 @@
 import { WebrootProduct } from "@/types";
 
-export const WEBROOT_PRODUCTS: WebrootProduct[] = [
+function getProductImage(category: string, slug: string): string {
+  if (category === "Antivirus" || category === "Gaming Edition") {
+    return "/images/products/webroot-antivirus.png";
+  }
+  if (category === "Complete Security" || category === "Premium Suite") {
+    return "/images/products/webroot-complete.png";
+  }
+  if (category === "VPN & Privacy") {
+    return "/images/products/webroot-vpn.png";
+  }
+  if (category === "Business Solutions") {
+    return "/images/products/webroot-business.png";
+  }
+  return "/images/products/webroot-internet-security.png";
+}
+
+const RAW_PRODUCTS: Omit<WebrootProduct, "image">[] = [
   {
     id: "wr-av-1d-1y",
     slug: "webroot-antivirus-1-device-1-year",
@@ -552,6 +568,11 @@ export const WEBROOT_PRODUCTS: WebrootProduct[] = [
     ]
   }
 ];
+
+export const WEBROOT_PRODUCTS: WebrootProduct[] = RAW_PRODUCTS.map(p => ({
+  ...p,
+  image: getProductImage(p.category, p.slug)
+}));
 
 export const PRODUCT_CATEGORIES = [
   "All Categories",

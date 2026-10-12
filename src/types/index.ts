@@ -24,6 +24,7 @@ export interface WebrootProduct {
     cloudStorage?: string;
   };
   badge?: string;
+  image?: string;
   faqs?: { question: string; answer: string }[];
 }
 

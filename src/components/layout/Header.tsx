@@ -11,7 +11,7 @@ export function Header() {
   const { itemCount } = useCart();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
-  const isShopArea = pathname.startsWith("/shop") || pathname.startsWith("/cart") || pathname.startsWith("/checkout");
+  const isShopArea = pathname.startsWith("/webroot-antivirus") || pathname.startsWith("/shop") || pathname.startsWith("/cart") || pathname.startsWith("/checkout");
 
   const closeMenu = () => setMobileMenuOpen(false);
 
@@ -66,10 +66,10 @@ export function Header() {
               About Us
             </Link>
             <Link
-              href="/shop"
-              className={`${styles.navLink} ${pathname.startsWith("/shop") ? styles.navLinkActive : ""}`}
+              href="/webroot-antivirus"
+              className={`${styles.navLink} ${pathname.startsWith("/webroot-antivirus") || pathname.startsWith("/shop") ? styles.navLinkActive : ""}`}
             >
-              Webroot Products
+              Webroot Antivirus
             </Link>
             <Link
               href="/contact"
@@ -94,8 +94,8 @@ export function Header() {
               </Link>
             )}
 
-            <Link href="/shop" className={styles.shopCtaButton}>
-              Shop Products
+            <Link href="/webroot-antivirus" className={styles.shopCtaButton}>
+              Webroot Antivirus
             </Link>
 
             {/* Mobile Menu Button */}
@@ -148,11 +148,11 @@ export function Header() {
             About Us
           </Link>
           <Link
-            href="/shop"
+            href="/webroot-antivirus"
             onClick={closeMenu}
-            className={`${styles.mobileNavLink} ${pathname.startsWith("/shop") ? styles.mobileNavLinkActive : ""}`}
+            className={`${styles.mobileNavLink} ${pathname.startsWith("/webroot-antivirus") || pathname.startsWith("/shop") ? styles.mobileNavLinkActive : ""}`}
           >
-            Webroot Products
+            Webroot Antivirus
           </Link>
           <Link
             href="/contact"
@@ -177,12 +177,12 @@ export function Header() {
               <span>View Cart ({itemCount})</span>
             </Link>
             <Link
-              href="/shop"
+              href="/webroot-antivirus"
               onClick={closeMenu}
               className={styles.shopCtaButton}
               style={{ justifyContent: "center" }}
             >
-              Browse Webroot Products
+              Browse Webroot Antivirus
             </Link>
           </div>
         </div>

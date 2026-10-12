@@ -30,7 +30,7 @@ export default function CartPage() {
               <p className={styles.emptyText}>
                 You haven&apos;t added any Webroot cybersecurity licenses to your cart yet. Explore our verified product catalog to find the right protection plan for your devices.
               </p>
-              <Link href="/shop" className="btn btnPrimary">
+              <Link href="/webroot-antivirus" className="btn btnPrimary">
                 Return to Webroot Store
               </Link>
             </div>
@@ -69,7 +69,7 @@ export default function CartPage() {
                   <div key={product.id} className={styles.cartRow}>
                     {/* Title & Metadata */}
                     <div className={styles.productInfo}>
-                      <Link href={`/shop/${product.slug}`} className={styles.itemTitle}>
+                      <Link href={`/webroot-antivirus/${product.slug}`} className={styles.itemTitle}>
                         {product.name}
                       </Link>
                       <span className={styles.itemMeta}>
@@ -128,7 +128,7 @@ export default function CartPage() {
               </div>
 
               <div style={{ marginTop: "20px", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-                <Link href="/shop" className="btn btnOutline">
+                <Link href="/webroot-antivirus" className="btn btnOutline">
                   &larr; Continue Shopping
                 </Link>
                 <button

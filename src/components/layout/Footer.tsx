@@ -19,7 +19,7 @@ export function Footer() {
               <span className={styles.brandName}>{COMPANY_INFO.name}</span>
             </div>
             <p className={styles.brandDescription}>
-              Professional logistics coordination and authorized retail distribution of authentic Webroot cybersecurity software subscriptions.
+              Professional commercial logistics coordination and authorized retail distribution of authentic Webroot cybersecurity software subscriptions.
             </p>
             <div className={styles.addressBox}>
               <span className={styles.addressLabel}>Official Business Location</span>
@@ -36,7 +36,7 @@ export function Footer() {
               <li><Link href="/" className={styles.link}>Home</Link></li>
               <li><Link href="/services" className={styles.link}>Logistics Services</Link></li>
               <li><Link href="/about" className={styles.link}>About Company</Link></li>
-              <li><Link href="/shop" className={styles.link}>Webroot Catalog</Link></li>
+              <li><Link href="/webroot-antivirus" className={styles.link}>Webroot Antivirus</Link></li>
               <li><Link href="/contact" className={styles.link}>Contact Us</Link></li>
             </ul>
           </div>
@@ -45,12 +45,12 @@ export function Footer() {
           <div>
             <h3 className={styles.colHeading}>Webroot Store</h3>
             <ul className={styles.linkList}>
-              <li><Link href="/shop?category=Antivirus" className={styles.link}>AntiVirus Protection</Link></li>
-              <li><Link href="/shop?category=Essentials" className={styles.link}>Essentials Plans</Link></li>
-              <li><Link href="/shop?category=Internet+Security" className={styles.link}>Internet Security Plus</Link></li>
-              <li><Link href="/shop?category=Complete+Security" className={styles.link}>Complete Security Suite</Link></li>
-              <li><Link href="/shop?category=VPN+%26+Privacy" className={styles.link}>Secure VPN Client</Link></li>
-              <li><Link href="/shop?category=Business+Solutions" className={styles.link}>Business Endpoints</Link></li>
+              <li><Link href="/webroot-antivirus?category=Antivirus" className={styles.link}>AntiVirus Protection</Link></li>
+              <li><Link href="/webroot-antivirus?category=Essentials" className={styles.link}>Essentials Plans</Link></li>
+              <li><Link href="/webroot-antivirus?category=Internet+Security" className={styles.link}>Internet Security Plus</Link></li>
+              <li><Link href="/webroot-antivirus?category=Complete+Security" className={styles.link}>Complete Security Suite</Link></li>
+              <li><Link href="/webroot-antivirus?category=VPN+%26+Privacy" className={styles.link}>Secure VPN Client</Link></li>
+              <li><Link href="/webroot-antivirus?category=Business+Solutions" className={styles.link}>Business Endpoints</Link></li>
             </ul>
           </div>
 
@@ -67,23 +67,41 @@ export function Footer() {
             </ul>
           </div>
         </div>
+
+        {/* Prominent Legal & Commercial Disclaimer Card */}
+        <div className={styles.disclaimerCard}>
+          <div className={styles.disclaimerCardHeader}>
+            <svg className={styles.disclaimerIcon} width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+              <line x1="12" y1="8" x2="12" y2="12" />
+              <line x1="12" y1="16" x2="12.01" y2="16" />
+            </svg>
+            <span className={styles.disclaimerCardTitle}>IMPORTANT LEGAL &amp; COMMERCIAL DISCLAIMER</span>
+          </div>
+
+          <div className={styles.disclaimerCardBody}>
+            <p>
+              <strong>Independent Retailer &amp; Trademark Attribution:</strong> PG SPECIALIZED LOGISTICS LLC is an independent commercial company and an independent reseller/retailer of authentic computer software products. Webroot, Webroot SecureAnywhere, BrightCloud, and associated logos are registered trademarks of OpenText Corporation. PG Specialized Logistics LLC is not directly affiliated with, sponsored by, or endorsed by OpenText Corporation.
+            </p>
+            <p>
+              <strong>Authentic Software Licensing &amp; Delivery:</strong> All software subscriptions sold through this website are genuine, legitimate, and sourced through verified commercial distribution channels. Product keys and activation instructions are delivered electronically upon order processing and are governed by the respective software publisher&apos;s End User License Agreement (EULA).
+            </p>
+            <p>
+              <strong>Commercial Logistics Capabilities:</strong> Freight transportation coordination, logistics planning, and distribution capabilities referenced on this website reflect commercial services managed from our registered commercial address at 402 LOGISTIC DR, LAREDO, TX 78045. All transportation arrangements are subject to formal written carrier agreements, route availability, and regulatory compliance.
+            </p>
+          </div>
+        </div>
       </div>
 
       {/* Disclaimers & Regulatory Notices */}
       <div className={styles.disclaimerSection}>
         <div className="container">
-          <p className={styles.disclaimerText}>
-            <strong>Commercial Logistics Disclosure:</strong> Logistics and transportation capabilities listed on this website represent proposed commercial service offerings subject to definitive contract terms, carrier assignment, and verified service agreements.
-          </p>
-          <p className={styles.disclaimerText}>
-            <strong>Trademark & Software Notice:</strong> Webroot, SecureAnywhere, and related trademarks are intellectual property of OpenText Corporation. PG Specialized Logistics LLC sells authentic, verifiable software retail licenses.
-          </p>
           <div className={styles.bottomBar}>
             <div>
               &copy; {currentYear} {COMPANY_INFO.name}. All rights reserved.
             </div>
             <div>
-              Registered Address: {COMPANY_INFO.address.formatted}
+              Registered Corporate Address: {COMPANY_INFO.address.formatted}
             </div>
           </div>
         </div>

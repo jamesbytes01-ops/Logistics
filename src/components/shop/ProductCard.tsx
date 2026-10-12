@@ -37,20 +37,29 @@ export function ProductCard({ product }: ProductCardProps) {
           {product.badge && <span className={styles.productBadge}>{product.badge}</span>}
         </div>
 
-        {/* Distinctive Graphic Product Plate */}
-        <div className={styles.imagePlaceholder} aria-hidden="true">
-          <div className={styles.imageGraphic}>
-            <span className={styles.imageLogoBrand}>WEBROOT &reg;</span>
-            <span className={styles.imageTitle}>{product.name.split("(")[0]}</span>
+        {/* Premium 3D Software Box Visual Showcase */}
+        <Link href={`/webroot-antivirus/${product.slug}`} className={styles.productVisualContainer}>
+          <div className={styles.boxArtworkWrapper}>
+            <img
+              src={product.image || "/images/products/webroot-antivirus.png"}
+              alt={`${product.name} retail box`}
+              className={styles.productBoxImage}
+              loading="lazy"
+            />
           </div>
-          {/* Subtle Watermark Shield */}
-          <svg className={styles.imageWatermark} width="90" height="90" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
-          </svg>
-        </div>
+          <div className={styles.boxOverlayBadges}>
+            <span className={styles.cloudBadge}>
+              <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+              </svg>
+              Cloud Defense
+            </span>
+            <span className={styles.digitalDeliveryBadge}>Instant Key</span>
+          </div>
+        </Link>
 
         <h3 className={styles.productTitle}>
-          <Link href={`/shop/${product.slug}`} className={styles.productTitleLink}>
+          <Link href={`/webroot-antivirus/${product.slug}`} className={styles.productTitleLink}>
             {product.name}
           </Link>
         </h3>
@@ -116,7 +125,7 @@ export function ProductCard({ product }: ProductCardProps) {
         </div>
 
         <div className={styles.actionsRow}>
-          <Link href={`/shop/${product.slug}`} className={styles.detailsBtn}>
+          <Link href={`/webroot-antivirus/${product.slug}`} className={styles.detailsBtn}>
             Details
           </Link>
           <button

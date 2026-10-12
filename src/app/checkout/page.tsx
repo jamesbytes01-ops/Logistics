@@ -67,7 +67,7 @@ export default function CheckoutPage() {
               </p>
 
               <div style={{ display: "flex", gap: "12px", marginTop: "16px" }}>
-                <Link href="/shop" className="btn btnPrimary">
+                <Link href="/webroot-antivirus" className="btn btnPrimary">
                   Back to Software Catalog
                 </Link>
                 <Link href="/contact" className="btn btnOutline">
@@ -98,7 +98,7 @@ export default function CheckoutPage() {
               <p style={{ color: "#64748b", margin: "12px 0 24px" }}>
                 There are no items to review for checkout.
               </p>
-              <Link href="/shop" className="btn btnPrimary" style={{ margin: "0 auto" }}>
+              <Link href="/webroot-antivirus" className="btn btnPrimary" style={{ margin: "0 auto" }}>
                 Browse Webroot Catalog
               </Link>
             </div>

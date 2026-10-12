@@ -102,6 +102,47 @@
   color: var(--color-amber-500);
 }
 
+.disclaimerCard {
+  margin-top: 48px;
+  background: linear-gradient(180deg, rgba(15, 23, 42, 0.8) 0%, rgba(7, 17, 32, 0.95) 100%);
+  border: 1px solid rgba(217, 119, 6, 0.35);
+  border-radius: var(--radius-md);
+  padding: 24px 28px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+}
+
+.disclaimerCardHeader {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+.disclaimerIcon {
+  color: var(--color-amber-500);
+}
+
+.disclaimerCardTitle {
+  font-size: 0.85rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  color: #fbbf24;
+  text-transform: uppercase;
+}
+
+.disclaimerCardBody {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  font-size: 0.82rem;
+  line-height: 1.65;
+  color: #94a3b8;
+}
+
+.disclaimerCardBody strong {
+  color: #cbd5e1;
+}
+
 .disclaimerSection {
   background-color: #050b14;
   border-top: 1px solid rgba(255, 255, 255, 0.06);
@@ -109,10 +150,6 @@
   font-size: 0.8rem;
   line-height: 1.6;
   color: #64748b;
-}
-
-.disclaimerText {
-  margin-bottom: 12px;
 }
 
 .bottomBar {

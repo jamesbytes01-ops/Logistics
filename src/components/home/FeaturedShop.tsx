@@ -30,7 +30,7 @@ export function FeaturedShop() {
           </div>
 
           <div>
-            <Link href="/shop" className="btn btnSecondary">
+            <Link href="/webroot-antivirus" className="btn btnSecondary">
               Browse All 15 Offerings
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
                 <line x1="5" y1="12" x2="19" y2="12" />
@@ -55,7 +55,7 @@ export function FeaturedShop() {
               Our complete catalog features 15 distinct, verified Webroot subscriptions spanning single-PC antivirus, multi-device household plans, encrypted VPN tunnels, and commercial business endpoint protection.
             </p>
           </div>
-          <Link href="/shop" className="btn btnPrimary">
+          <Link href="/webroot-antivirus" className="btn btnPrimary">
             View Complete Software Catalog
           </Link>
         </div>
