@@ -4,7 +4,10 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "prebuild": "node scripts/patch-opennext.js",
     "build": "next build",
+    "postbuild": "node scripts/patch-opennext.js",
+    "postinstall": "node scripts/patch-opennext.js",
     "start": "next start",
     "lint": "eslint"
   },
@@ -14,6 +17,7 @@
     "react-dom": "19.3.0"
   },
   "devDependencies": {
+    "@opennextjs/cloudflare": "1.20.10",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
