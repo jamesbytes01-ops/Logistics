@@ -22,12 +22,10 @@ export function Footer() {
               Professional commercial logistics coordination and authorized retail distribution of authentic Webroot cybersecurity software subscriptions.
             </p>
             <div className={styles.addressBox}>
-              <span className={styles.addressLabel}>Official Business Location</span>
-              <span>{COMPANY_INFO.address.street}</span>
-              <span>{COMPANY_INFO.address.city}, {COMPANY_INFO.address.state} {COMPANY_INFO.address.postalCode}</span>
-              <span>{COMPANY_INFO.address.country}</span>
-              <div style={{ marginTop: "12px", paddingTop: "10px", borderTop: "1px solid rgba(255,255,255,0.1)", display: "flex", flexDirection: "column", gap: "4px" }}>
-                <span className={styles.addressLabel}>Direct Email</span>
+              <span className={styles.addressLabel}>Corporate Logistics Office</span>
+              <span>{COMPANY_INFO.address.street}, {COMPANY_INFO.address.city}, {COMPANY_INFO.address.state} {COMPANY_INFO.address.postalCode}</span>
+              <div style={{ marginTop: "4px", paddingTop: "4px", borderTop: "1px solid rgba(255,255,255,0.08)", display: "flex", alignItems: "center", gap: "6px" }}>
+                <span className={styles.addressLabel} style={{ marginBottom: 0 }}>Email:</span>
                 <a href={`mailto:${COMPANY_INFO.email}`} className={styles.link} style={{ color: "var(--color-amber-400)", fontWeight: 500 }}>
                   {COMPANY_INFO.email}
                 </a>
@@ -74,29 +72,20 @@ export function Footer() {
           </div>
         </div>
 
-        {/* Prominent Legal & Commercial Disclaimer Card */}
+        {/* Legal & Commercial Disclaimer Card */}
         <div className={styles.disclaimerCard}>
           <div className={styles.disclaimerCardHeader}>
-            <svg className={styles.disclaimerIcon} width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+            <svg className={styles.disclaimerIcon} width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
               <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
               <line x1="12" y1="8" x2="12" y2="12" />
               <line x1="12" y1="16" x2="12.01" y2="16" />
             </svg>
-            <span className={styles.disclaimerCardTitle}>IMPORTANT LEGAL &amp; COMMERCIAL DISCLAIMER</span>
+            <span className={styles.disclaimerCardTitle}>Legal &amp; Commercial Disclaimer</span>
           </div>
 
           <div className={styles.disclaimerCardBody}>
-            <p style={{ fontWeight: 600, color: "var(--text-primary)" }}>
-              &copy; 2026 Digifortship. Owned and Operated by PG SPECIALIZED LOGISTICS LLC. All Rights Reserved.
-            </p>
             <p>
-              <strong>Independent Retailer &amp; Trademark Attribution:</strong> Digifortship is owned and operated by PG SPECIALIZED LOGISTICS LLC. PG SPECIALIZED LOGISTICS LLC is an independent commercial company and an independent reseller/retailer of authentic computer software products. Webroot, Webroot SecureAnywhere, BrightCloud, and associated logos are registered trademarks of OpenText Corporation. Digifortship and PG Specialized Logistics LLC are not directly affiliated with, sponsored by, or endorsed by OpenText Corporation.
-            </p>
-            <p>
-              <strong>Authentic Software Licensing &amp; Delivery:</strong> All software subscriptions sold through this website are genuine, legitimate, and sourced through verified commercial distribution channels. Product keys and activation instructions are delivered electronically upon order processing and are governed by the respective software publisher&apos;s End User License Agreement (EULA).
-            </p>
-            <p>
-              <strong>Commercial Logistics Capabilities:</strong> Freight transportation coordination, logistics planning, and distribution capabilities referenced on this website reflect commercial services managed from our registered commercial address at 402 LOGISTIC DR, LAREDO, TX 78045. All transportation arrangements are subject to formal written carrier agreements, route availability, and regulatory compliance.
+              <strong>Digifortship</strong> is owned and operated by <strong>PG SPECIALIZED LOGISTICS LLC</strong>, an independent commercial reseller of genuine Webroot cybersecurity software. Webroot&reg;, Webroot SecureAnywhere&reg;, and BrightCloud&reg; are trademarks of OpenText Corporation. Digifortship is not directly affiliated with or endorsed by OpenText. Software product keys are delivered electronically under publisher EULA terms. Commercial freight managed from 402 Logistic Dr, Laredo, TX 78045.
             </p>
           </div>
         </div>
