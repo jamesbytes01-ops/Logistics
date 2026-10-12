@@ -26,6 +26,12 @@ export function Footer() {
               <span>{COMPANY_INFO.address.street}</span>
               <span>{COMPANY_INFO.address.city}, {COMPANY_INFO.address.state} {COMPANY_INFO.address.postalCode}</span>
               <span>{COMPANY_INFO.address.country}</span>
+              <div style={{ marginTop: "12px", paddingTop: "10px", borderTop: "1px solid rgba(255,255,255,0.1)", display: "flex", flexDirection: "column", gap: "4px" }}>
+                <span className={styles.addressLabel}>Direct Email</span>
+                <a href={`mailto:${COMPANY_INFO.email}`} className={styles.link} style={{ color: "var(--color-amber-400)", fontWeight: 500 }}>
+                  {COMPANY_INFO.email}
+                </a>
+              </div>
             </div>
           </div>
 

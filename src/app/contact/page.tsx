@@ -186,6 +186,15 @@ export default function ContactPage() {
               </div>
 
               <div className={styles.infoItem}>
+                <span className={styles.infoLabel}>Official Contact Email</span>
+                <span className={styles.infoValue}>
+                  <a href={`mailto:${COMPANY_INFO.email}`} style={{ color: "var(--color-navy-700)", fontWeight: 600, textDecoration: "underline" }}>
+                    {COMPANY_INFO.email}
+                  </a>
+                </span>
+              </div>
+
+              <div className={styles.infoItem}>
                 <span className={styles.infoLabel}>Trade Gateway</span>
                 <span className={styles.infoValue}>Laredo Inland Port Logistics Region</span>
               </div>

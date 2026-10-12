@@ -1,6 +1,8 @@
 export const COMPANY_INFO = {
   name: "PG SPECIALIZED LOGISTICS LLC",
   shortName: "PG Specialized Logistics",
+  brandName: "Digifortship",
+  email: "info@digifortship.com",
   address: {
     street: "402 LOGISTIC DR",
     city: "LAREDO",

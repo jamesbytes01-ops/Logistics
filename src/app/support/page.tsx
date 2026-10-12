@@ -75,6 +75,10 @@ export default function SupportPage() {
               <div className={styles.calloutBox}>
                 <strong>{COMPANY_INFO.name}</strong><br />
                 {COMPANY_INFO.address.formatted}<br />
+                Email:{" "}
+                <a href={`mailto:${COMPANY_INFO.email}`} style={{ color: "var(--color-navy-950)", fontWeight: 700, textDecoration: "underline" }}>
+                  {COMPANY_INFO.email}
+                </a><br />
                 Inquiries can also be submitted through our{" "}
                 <Link href="/contact" style={{ color: "var(--color-navy-950)", fontWeight: 700, textDecoration: "underline" }}>
                   Contact Page
