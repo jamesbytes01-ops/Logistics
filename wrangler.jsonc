@@ -22,6 +22,16 @@
   "observability": {
     "enabled": true
   },
+  "routes": [
+    {
+      "pattern": "trinitysecurityhub.com",
+      "custom_domain": true
+    },
+    {
+      "pattern": "www.trinitysecurityhub.com",
+      "custom_domain": true
+    }
+  ],
   "build": {
     "command": "npx opennextjs-cloudflare build"
   }
