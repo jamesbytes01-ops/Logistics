@@ -7,7 +7,7 @@ function patchFile(filePath, transforms) {
   let changed = false;
 
   for (const { search, replace, name } of transforms) {
-    if (content.includes(search)) {
+    if (typeof search === 'string' ? content.includes(search) : search.test(content)) {
       content = content.replace(search, replace);
       changed = true;
       console.log(`[patch-opennext] Applied ${name} in ${filePath}`);
@@ -24,36 +24,78 @@ function patchFile(filePath, transforms) {
 function run() {
   console.log('[patch-opennext] Checking for OpenNext files to patch...');
 
-  // 1. Target load-manifest.js in @opennextjs/cloudflare
   const openNextDir = path.resolve(__dirname, '../node_modules/@opennextjs/cloudflare');
   if (fs.existsSync(openNextDir)) {
+    // 1. Target load-manifest.js in @opennextjs/cloudflare
     const manifestPlugin = path.join(openNextDir, 'dist/cli/build/patches/plugins/load-manifest.js');
-    if (fs.existsSync(manifestPlugin)) {
-      let content = fs.readFileSync(manifestPlugin, 'utf8');
-      let changed = false;
-
-      // 1. Prevent throwing on missing manifests (return {} instead)
-      if (content.includes('Unexpected loadManifest')) {
-        content = content.replace(/throw new Error\([`\\].*?Unexpected loadManifest.*?[`\\].*?\);/g, 'return {};');
-        changed = true;
-        console.log('[patch-opennext] Replaced Unexpected loadManifest throw with return {};');
+    patchFile(manifestPlugin, [
+      {
+        name: 'manifest throw prevention',
+        search: /throw new Error\([`\\].*?Unexpected loadManifest.*?[`\\].*?\);/g,
+        replace: 'return {};'
+      },
+      {
+        name: 'preview-props whitelist',
+        search: 'p.endsWith("prefetch-hints")',
+        replace: 'p.endsWith("prefetch-hints") || p.endsWith("preview-props")'
+      },
+      {
+        name: 'preview-props glob',
+        search: 'prefetch-hints}.json',
+        replace: 'prefetch-hints,preview-props}.json'
       }
+    ]);
 
-      // 2. Add preview-props to manifest whitelist
-      if (content.includes('prefetch-hints') && !content.includes('preview-props')) {
-        content = content.replace('p.endsWith("prefetch-hints")', 'p.endsWith("prefetch-hints") || p.endsWith("preview-props")');
-        content = content.replace('prefetch-hints}.json', 'prefetch-hints,preview-props}.json');
-        changed = true;
-        console.log('[patch-opennext] Added preview-props to manifest whitelist');
+    // 2. Target helpers.js to prevent workerd crash on Windows during getEnvFromPlatformProxy
+    const helpersFile = path.join(openNextDir, 'dist/cli/commands/utils/helpers.js');
+    patchFile(helpersFile, [
+      {
+        name: 'safe getEnvFromPlatformProxy',
+        search: /const proxy = await getPlatformProxy\(\{[\s\S]*?await proxy\.dispose\(\);/m,
+        replace: `try {
+        const proxy = await getPlatformProxy({
+            ...options,
+            envFiles: [],
+        });
+        Object.entries(proxy.env).forEach(([key, value]) => {
+            if (typeof value === "string") {
+                envVars[key] = value;
+            }
+        });
+        await proxy.dispose();
+    } catch (e) {
+        // Fall back gracefully if workerd fails to launch (e.g. Windows runtime issue)
+    }`
       }
+    ]);
 
-      if (changed) {
-        fs.writeFileSync(manifestPlugin, content, 'utf8');
-      }
+    // 3. Target utils.js to auto-run build if deploy is called without a prior build
+    const utilsFile = path.join(openNextDir, 'dist/cli/commands/utils/utils.js');
+    patchFile(utilsFile, [
+      {
+        name: 'auto-build in retrieveCompiledConfig',
+        search: `if (!existsSync(configPath)) {
+        logger.error("Could not find compiled Open Next config, did you run the build command?");
+        process.exit(1);
+    }`,
+        replace: `if (!existsSync(configPath)) {
+        logger.info("Compiled Open Next config not found, executing opennextjs-cloudflare build automatically...");
+        const { execSync } = await import("child_process");
+        try {
+            execSync("npx opennextjs-cloudflare build", { stdio: "inherit" });
+        } catch (buildErr) {
+            logger.error("Auto-build failed: " + buildErr.message);
+        }
     }
+    if (!existsSync(configPath)) {
+        logger.error("Could not find compiled Open Next config, did you run the build command?");
+        process.exit(1);
+    }`
+      }
+    ]);
   }
 
-  // 2. Also search recursively in .open-next if it exists
+  // 4. Also search recursively in .open-next if it exists
   const dotOpenNext = path.resolve(__dirname, '../.open-next');
   if (fs.existsSync(dotOpenNext)) {
     function scanDir(dir) {
