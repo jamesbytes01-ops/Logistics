@@ -6,7 +6,7 @@ import styles from "../policy.module.css";
 export const metadata: Metadata = {
   title: "Subscription and Renewal Policy",
   description:
-    "Information regarding Webroot subscription terms, duration periods, and renewal protocols with PG Specialized Logistics LLC.",
+    "Information regarding Webroot subscription terms, duration periods, and renewal protocols with TrinitySecurityHub.com (Trinity Logistics Solutions, LLC).",
 };
 
 export default function SubscriptionPolicyPage() {
@@ -26,7 +26,7 @@ export default function SubscriptionPolicyPage() {
             <div className={styles.sectionBlock}>
               <h2 className={styles.heading2}>1. Term Durations and Billing Structure</h2>
               <p className={styles.paragraph}>
-                All Webroot software licenses retailed by <strong>{COMPANY_INFO.name}</strong> are sold as fixed-term subscriptions:
+                All Webroot software licenses retailed through <strong>{COMPANY_INFO.brandName}</strong> by <strong>{COMPANY_INFO.name}</strong> are sold as fixed-term subscriptions:
               </p>
               <ul className={styles.list}>
                 <li><strong>1-Year Subscriptions:</strong> Provide 365 calendar days of continuous cloud threat intelligence updates, antivirus scanning, and technical definitions from the date the license keycode is activated on your first device.</li>

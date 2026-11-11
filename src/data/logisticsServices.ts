@@ -5,13 +5,13 @@ export const PROPOSED_SERVICES: LogisticsService[] = [
     id: "freight-transportation",
     title: "Freight Transportation",
     badge: "Proposed Capability",
-    shortSummary: "Proposed regional and dry freight transportation coordination positioned at the key trade corridor of Laredo, Texas.",
-    fullDescription: "Proposed freight transportation services engineered to facilitate movement of goods through direct linehauls, Full Truckload (FTL), and Less Than Truckload (LTL) carrier networks. Positioned in the prime international shipping hub of Laredo, Texas, proposed capabilities focus on structured scheduling, reliable routing, and verified bill-of-lading handling.",
+    shortSummary: "Proposed regional and dry freight transportation coordination positioned at the key freight crossroads of Saint Louis, Missouri.",
+    fullDescription: "Proposed freight transportation services engineered to facilitate movement of goods through direct linehauls, Full Truckload (FTL), and Less Than Truckload (LTL) carrier networks. Positioned in the prime transportation hub of Saint Louis, Missouri, proposed capabilities focus on structured scheduling, reliable routing, and verified bill-of-lading handling.",
     operationalScope: "Regional interstate routes, cross-border corridor logistics, dry van and standard palletized freight coordination.",
     capabilities: [
       "Full Truckload (FTL) network coordination",
       "Less Than Truckload (LTL) scheduling",
-      "Laredo trade corridor route oversight",
+      "Saint Louis trade corridor route oversight",
       "Bill of lading and dispatch verification",
       "Carrier capacity matching"
     ],

@@ -1,11 +1,11 @@
-# PG Specialized Logistics LLC — Official Website & Software Retail
+# TrinitySecurityHub.com — Official Website & Software Retail
 
-Production-grade website and Webroot cybersecurity software retail portal for **PG Specialized Logistics LLC**.
+Production-grade website and Webroot cybersecurity software retail portal for **TrinitySecurityHub.com**, owned and operated by **Trinity Logistics Solutions, LLC**.
 
 ## Corporate Information
 
-- **Company Name:** PG SPECIALIZED LOGISTICS LLC
-- **Registered Address:** 402 LOGISTIC DR, LAREDO, TX 78045, United States
+- **Company Name:** Trinity Logistics Solutions, LLC
+- **Registered Address:** 345 Marshall Avenue, Saint Louis, MO 63119, United States
 - **Operations:** Commercial logistics & transportation coordination discussions and authentic Webroot cybersecurity software retail distribution.
 
 ## Tech Stack

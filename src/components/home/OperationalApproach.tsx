@@ -14,8 +14,8 @@ export function OperationalApproach() {
       )
     },
     {
-      title: "Cross-Border Gateway Positioning",
-      description: "Situated directly in Laredo, TX (402 Logistic Dr), our team understands the operational precision required at major transit nodes.",
+      title: "Strategic Midwest Gateway Positioning",
+      description: "Situated directly in Saint Louis, MO (345 Marshall Avenue), our team understands the operational precision required at major transit nodes.",
       icon: (
         <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
           <polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6" />

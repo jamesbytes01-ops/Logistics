@@ -76,6 +76,13 @@ export default function WebrootAntivirusPage() {
         <div className="container">
           <div className={styles.heroContent}>
             <span className={styles.kicker}>Software &amp; Digital Solutions Store</span>
+            <div className={styles.authorizedTrustBadge}>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" style={{ color: "#34d399", flexShrink: 0 }}>
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                <polyline points="9 12 11 14 15 10" />
+              </svg>
+              <span>We are authorized seller of the webroot antivirus</span>
+            </div>
             <h1 className={styles.title}>Webroot Cybersecurity Products</h1>
             <p className={styles.subtitle}>
               Browse legitimate, verified Webroot subscriptions. Lightweight cloud-native threat protection, secure VPN encryption, and multi-device identity defense with transparent pricing and direct licensing.
@@ -85,7 +92,7 @@ export default function WebrootAntivirusPage() {
                 <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
               </svg>
               <span>
-                <strong>Authentic Licensing:</strong> All products are genuine Webroot software licenses. No grey-market codes, trial counterfeits, or unverified keys.
+                <strong>Verified Authorization:</strong> We are authorized seller of the webroot antivirus. All licenses are authentic, directly issued retail subscriptions with full manufacturer support.
               </span>
             </div>
           </div>
@@ -141,7 +148,7 @@ export default function WebrootAntivirusPage() {
           {/* Trademark & License Disclaimer */}
           <div className={styles.trademarkDisclaimer}>
             <p>
-              <strong>Product &amp; Trademark Notice:</strong> Webroot, Webroot SecureAnywhere, and BrightCloud are registered trademarks of OpenText Corporation. PG Specialized Logistics LLC offers authentic retail software licenses. Product specifications, system requirements, and manufacturer features are presented according to published manufacturer details.
+              <strong>Product &amp; Trademark Notice:</strong> Webroot, Webroot SecureAnywhere, and BrightCloud are registered trademarks of OpenText Corporation. Trinity Logistics Solutions, LLC offers authentic retail software licenses. Product specifications, system requirements, and manufacturer features are presented according to published manufacturer details.
             </p>
           </div>
         </div>

@@ -37,7 +37,7 @@ export default function ContactPage() {
             <span className={styles.kicker}>Direct Communications</span>
             <h1 className={styles.title}>Contact Our Operations Office</h1>
             <p className={styles.subtitle}>
-              Reach out to PG Specialized Logistics LLC for commercial transportation coordination discussions or software subscription inquiries.
+              Reach out to Trinity Logistics Solutions, LLC for commercial transportation coordination discussions or software subscription inquiries.
             </p>
           </div>
         </div>
@@ -195,8 +195,17 @@ export default function ContactPage() {
               </div>
 
               <div className={styles.infoItem}>
+                <span className={styles.infoLabel}>Direct Phone Support</span>
+                <span className={styles.infoValue}>
+                  <a href={`tel:${COMPANY_INFO.phoneRaw}`} style={{ color: "var(--color-navy-700)", fontWeight: 700, textDecoration: "underline" }}>
+                    {COMPANY_INFO.phone}
+                  </a>
+                </span>
+              </div>
+
+              <div className={styles.infoItem}>
                 <span className={styles.infoLabel}>Trade Gateway</span>
-                <span className={styles.infoValue}>Laredo Inland Port Logistics Region</span>
+                <span className={styles.infoValue}>Saint Louis Regional Commercial Logistics Hub</span>
               </div>
 
               <div className={styles.honestNotice}>

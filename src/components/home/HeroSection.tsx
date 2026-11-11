@@ -21,7 +21,7 @@ export function HeroSection() {
             </h1>
 
             <p className={styles.heroSubtitle}>
-              Discover a professional approach to logistics, transportation coordination, and business-ready solutions. Headquartered at {COMPANY_INFO.address.street} in Laredo, Texas, we combine freight planning frameworks with authorized distribution of Webroot cybersecurity subscriptions.
+              Discover a professional approach to logistics, transportation coordination, and business-ready solutions. Headquartered at {COMPANY_INFO.address.street} in Saint Louis, Missouri, we combine freight planning frameworks with authorized distribution of Webroot cybersecurity subscriptions.
             </p>
 
             <div className={styles.ctaRow}>
@@ -42,7 +42,7 @@ export function HeroSection() {
           <div className={styles.heroCard}>
             <div className={styles.cardHeader}>
               <span className={styles.cardTitle}>Operational Hub Profile</span>
-              <span className={styles.locationIndicator}>Laredo Gateway</span>
+              <span className={styles.locationIndicator}>Saint Louis Gateway</span>
             </div>
 
             <div className={styles.specsList}>
@@ -58,7 +58,7 @@ export function HeroSection() {
                 <div>
                   <div className={styles.specLabel}>Commercial Freight Coordination</div>
                   <div className={styles.specDesc}>
-                    Focused planning for regional truckload and LTL transportation along vital southern logistics arteries.
+                    Focused planning for regional truckload and LTL transportation along vital central and interstate logistics arteries.
                   </div>
                 </div>
               </div>

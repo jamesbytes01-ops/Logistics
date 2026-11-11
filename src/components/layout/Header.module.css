@@ -29,6 +29,43 @@
   color: #cbd5e1;
 }
 
+.topBarContactGroup {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.topBarLink {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #cbd5e1;
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+.topBarLink:hover {
+  color: #fbbf24;
+}
+
+.topBarDot {
+  color: rgba(255, 255, 255, 0.2);
+}
+
+.topBarPhone {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #fbbf24;
+  font-weight: 700;
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+.topBarPhone:hover {
+  color: #fde047;
+}
+
 .topBarBadge {
   background-color: rgba(217, 119, 6, 0.2);
   color: #fbbf24;
@@ -55,18 +92,16 @@
 }
 
 .brandLogoMark {
-  width: 40px;
-  height: 40px;
-  background: linear-gradient(135deg, var(--color-amber-500), #92400e);
-  color: #ffffff;
-  font-weight: 800;
-  font-size: 1.1rem;
-  letter-spacing: 0.05em;
+  width: 42px;
+  height: 42px;
+  background: linear-gradient(135deg, #111c30 0%, #060a12 100%);
+  border: 1.5px solid rgba(245, 158, 11, 0.7);
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: var(--radius-sm);
-  box-shadow: 0 2px 8px rgba(217, 119, 6, 0.35);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.12);
+  flex-shrink: 0;
 }
 
 .brandText {
@@ -83,9 +118,9 @@
 }
 
 .brandSub {
-  font-size: 0.68rem;
+  font-size: 0.64rem;
   text-transform: uppercase;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.08em;
   color: #94a3b8;
   font-weight: 600;
 }
@@ -240,5 +275,24 @@
     display: flex;
     flex-direction: column;
     gap: 12px;
+  }
+}
+
+@media (max-width: 640px) {
+  .topBarInner {
+    flex-direction: column;
+    gap: 4px;
+    align-items: flex-start;
+  }
+  .topBarContactGroup {
+    font-size: 0.72rem;
+    gap: 8px;
+  }
+  .brandName {
+    font-size: 0.92rem;
+  }
+  .brandSub {
+    font-size: 0.58rem;
+    letter-spacing: 0.05em;
   }
 }

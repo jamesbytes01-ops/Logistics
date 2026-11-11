@@ -22,21 +22,24 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "PG Specialized Logistics LLC | Freight Coordination & Webroot Software",
-    template: "%s | PG Specialized Logistics LLC",
+    default: "TrinitySecurityHub.com | Freight Coordination & Webroot Software",
+    template: "%s | TrinitySecurityHub.com",
   },
   description:
-    "PG Specialized Logistics LLC — Professional logistics and transportation coordination based in Laredo, TX, paired with genuine Webroot cybersecurity software subscriptions.",
+    "TrinitySecurityHub.com by Trinity Logistics Solutions, LLC — Professional logistics and transportation coordination based in Saint Louis, MO, paired with genuine Webroot cybersecurity software subscriptions.",
   keywords: [
+    "TrinitySecurityHub",
+    "TrinitySecurityHub.com",
     "logistics",
     "freight transportation",
-    "Laredo TX logistics",
+    "Saint Louis MO logistics",
+    "Missouri logistics",
     "Webroot antivirus",
     "Webroot software licenses",
     "cybersecurity",
     "transportation solutions",
   ],
-  authors: [{ name: "PG Specialized Logistics LLC" }],
+  authors: [{ name: "TrinitySecurityHub.com" }, { name: "Trinity Logistics Solutions, LLC" }],
   icons: {
     icon: [
       { url: "/favicon.ico", sizes: "any" },

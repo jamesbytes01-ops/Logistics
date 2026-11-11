@@ -13,8 +13,8 @@ export const metadata: Metadata = {
 export default function FAQPage() {
   const faqs = [
     {
-      q: "What is the primary scope of PG Specialized Logistics LLC?",
-      a: `${COMPANY_INFO.name} coordinates commercial freight, transportation scheduling, and supply-chain logistics originating from the Laredo, TX shipping corridor. In addition, we retail authentic retail licenses for Webroot cybersecurity software.`
+      q: `What is the primary scope of ${COMPANY_INFO.name}?`,
+      a: `${COMPANY_INFO.name} coordinates commercial freight, transportation scheduling, and supply-chain logistics originating from our regional commercial hub in Saint Louis, Missouri. In addition, we retail authentic retail licenses for Webroot cybersecurity software.`
     },
     {
       q: "Are the logistics capabilities listed on this site confirmed service offerings?",

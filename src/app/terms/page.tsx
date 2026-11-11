@@ -6,7 +6,7 @@ import styles from "../policy.module.css";
 export const metadata: Metadata = {
   title: "Terms and Conditions",
   description:
-    "Terms and Conditions governing the use of the PG Specialized Logistics LLC website and software procurement.",
+    "Terms and Conditions governing the use of the TrinitySecurityHub.com website and software procurement.",
 };
 
 export default function TermsPage() {
@@ -26,7 +26,7 @@ export default function TermsPage() {
             <div className={styles.sectionBlock}>
               <h2 className={styles.heading2}>1. Acceptance of Terms</h2>
               <p className={styles.paragraph}>
-                By accessing and utilizing this website operated by <strong>{COMPANY_INFO.name}</strong> (&ldquo;Company&rdquo;), you agree to comply with and be bound by these Terms and Conditions. If you do not agree with any provision herein, you must refrain from utilizing this website.
+                By accessing and utilizing this website (<strong>{COMPANY_INFO.brandName}</strong>), operated by <strong>{COMPANY_INFO.name}</strong> (&ldquo;Company&rdquo;), you agree to comply with and be bound by these Terms and Conditions. If you do not agree with any provision herein, you must refrain from utilizing this website.
               </p>
             </div>
 
@@ -47,7 +47,7 @@ export default function TermsPage() {
             <div className={styles.sectionBlock}>
               <h2 className={styles.heading2}>4. Intellectual Property Rights</h2>
               <p className={styles.paragraph}>
-                All website text, layout, graphic marks, and organization are proprietary to {COMPANY_INFO.name}. Webroot, SecureAnywhere, and BrightCloud are registered trademarks of OpenText Corporation and are utilized on this site solely to identify genuine software items being offered for license.
+                All website text, layout, graphic marks, and organization are proprietary to {COMPANY_INFO.brandName} and {COMPANY_INFO.name}. Webroot, SecureAnywhere, and BrightCloud are registered trademarks of OpenText Corporation and are utilized on this site solely to identify genuine software items being offered for license.
               </p>
             </div>
 
@@ -61,7 +61,7 @@ export default function TermsPage() {
             <div className={styles.sectionBlock}>
               <h2 className={styles.heading2}>6. Governing Law &amp; Jurisdiction</h2>
               <p className={styles.paragraph}>
-                These Terms and Conditions shall be governed by and construed in accordance with the laws of the State of Texas, United States, without regard to conflict of law principles. Any legal action arising from these terms shall be instituted in Webb County, Texas.
+                These Terms and Conditions shall be governed by and construed in accordance with the laws of the State of Missouri, United States, without regard to conflict of law principles. Any legal action arising from these terms shall be instituted in St. Louis County, Missouri.
               </p>
             </div>
 

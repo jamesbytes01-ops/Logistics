@@ -10,10 +10,10 @@ export function ContactCallout() {
         <div className={styles.box}>
           <div>
             <h2 id="contact-callout-heading" className={styles.heading}>
-              Connect with PG Specialized Logistics LLC
+              Connect with {COMPANY_INFO.name}
             </h2>
             <p className={styles.description}>
-              Whether you are looking to discuss proposed commercial transportation coordination along southwest freight corridors or require inquiries regarding Webroot software licenses, our business operations team is ready to assist.
+              Whether you are looking to discuss proposed commercial transportation coordination along central freight corridors or require inquiries regarding Webroot software licenses, our business operations team is ready to assist.
             </p>
             <div className={styles.actions}>
               <Link href="/contact" className="btn btnPrimary">

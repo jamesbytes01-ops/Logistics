@@ -63,7 +63,7 @@ export default function CheckoutPage() {
                 Thank you, <strong>{formData.fullName || "Customer"}</strong>. As stated, this website currently operates in demonstration / pre-integration mode without an active live payment gateway. No credit card has been charged.
               </p>
               <p className={styles.successText}>
-                For active commercial licensing and official invoices, our operations staff at 402 Logistic Dr, Laredo, TX can be reached via our contact page.
+                For active commercial licensing and official invoices, our operations staff at 345 Marshall Avenue, Saint Louis, MO can be reached via our contact page.
               </p>
 
               <div style={{ display: "flex", gap: "12px", marginTop: "16px" }}>
@@ -221,7 +221,7 @@ export default function CheckoutPage() {
                       required
                       value={formData.city}
                       onChange={handleChange}
-                      placeholder="Laredo"
+                      placeholder="Saint Louis"
                       className={styles.input}
                     />
                   </div>
@@ -237,7 +237,7 @@ export default function CheckoutPage() {
                       required
                       value={formData.state}
                       onChange={handleChange}
-                      placeholder="TX"
+                      placeholder="MO"
                       className={styles.input}
                     />
                   </div>
@@ -253,7 +253,7 @@ export default function CheckoutPage() {
                       required
                       value={formData.zipCode}
                       onChange={handleChange}
-                      placeholder="78045"
+                      placeholder="63119"
                       className={styles.input}
                     />
                   </div>

@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useCart } from "@/context/CartContext";
+import { COMPANY_INFO } from "@/data/companyInfo";
 import styles from "./Header.module.css";
 
 export function Header() {
@@ -25,9 +26,25 @@ export function Header() {
               <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
               <circle cx="12" cy="10" r="3" />
             </svg>
-            <span>402 LOGISTIC DR, LAREDO, TX 78045</span>
+            <span>{COMPANY_INFO.address.street.toUpperCase()}, {COMPANY_INFO.address.city.toUpperCase()}, {COMPANY_INFO.address.state} {COMPANY_INFO.address.postalCode}</span>
           </div>
-          <span className={styles.topBarBadge}>Commercial Operations & Cybersecurity Retail</span>
+
+          <div className={styles.topBarContactGroup}>
+            <a href={`mailto:${COMPANY_INFO.email}`} className={styles.topBarLink}>
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <rect width="20" height="16" x="2" y="4" rx="2" />
+                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+              </svg>
+              <span>{COMPANY_INFO.email}</span>
+            </a>
+            <span className={styles.topBarDot}>&bull;</span>
+            <a href={`tel:${COMPANY_INFO.phoneRaw}`} className={styles.topBarPhone}>
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+              </svg>
+              <span>{COMPANY_INFO.phone}</span>
+            </a>
+          </div>
         </div>
       </div>
 
@@ -37,11 +54,31 @@ export function Header() {
           {/* Brand Mark */}
           <Link href="/" className={styles.brand} onClick={closeMenu}>
             <div className={styles.brandLogoMark} aria-hidden="true">
-              PG
+              <svg width="26" height="26" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                  <linearGradient id="shieldLeftHdr" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stopColor="#fde047" />
+                    <stop offset="100%" stopColor="#d97706" />
+                  </linearGradient>
+                  <linearGradient id="shieldRightHdr" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stopColor="#d97706" />
+                    <stop offset="100%" stopColor="#78350f" />
+                  </linearGradient>
+                  <linearGradient id="shieldCoreHdr" x1="0%" y1="0%" x2="0%" y2="100%">
+                    <stop offset="0%" stopColor="#ffffff" />
+                    <stop offset="100%" stopColor="#fef08a" />
+                  </linearGradient>
+                </defs>
+                <path d="M18 5L7 10v11.5L18 32V25.5l-6-6V13.5L18 10z" fill="url(#shieldLeftHdr)" />
+                <path d="M18 5l11 5v11.5L18 32V25.5l6-6V13.5L18 10z" fill="url(#shieldRightHdr)" />
+                <polygon points="18,12 22.5,19 18,25 13.5,19" fill="url(#shieldCoreHdr)" />
+                <polygon points="18,12 22.5,19 18,25" fill="#000000" opacity="0.18" />
+                <polygon points="18,17 18.5,18.5 20,19 18.5,19.5 18,21 17.5,19.5 16,19 17.5,18.5" fill="#ffffff" />
+              </svg>
             </div>
             <div className={styles.brandText}>
-              <span className={styles.brandName}>PG SPECIALIZED LOGISTICS</span>
-              <span className={styles.brandSub}>LLC &bull; LAREDO, TX</span>
+              <span className={styles.brandName}>{COMPANY_INFO.brandName}</span>
+              <span className={styles.brandSub}>{COMPANY_INFO.name} &bull; SAINT LOUIS, MO</span>
             </div>
           </Link>
 

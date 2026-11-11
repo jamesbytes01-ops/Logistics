@@ -79,6 +79,10 @@ export default function SupportPage() {
                 <a href={`mailto:${COMPANY_INFO.email}`} style={{ color: "var(--color-navy-950)", fontWeight: 700, textDecoration: "underline" }}>
                   {COMPANY_INFO.email}
                 </a><br />
+                Phone:{" "}
+                <a href={`tel:${COMPANY_INFO.phoneRaw}`} style={{ color: "var(--color-navy-950)", fontWeight: 700, textDecoration: "underline" }}>
+                  {COMPANY_INFO.phone}
+                </a><br />
                 Inquiries can also be submitted through our{" "}
                 <Link href="/contact" style={{ color: "var(--color-navy-950)", fontWeight: 700, textDecoration: "underline" }}>
                   Contact Page

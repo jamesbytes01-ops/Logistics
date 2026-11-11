@@ -6,7 +6,7 @@ import styles from "../policy.module.css";
 export const metadata: Metadata = {
   title: "Privacy Policy",
   description:
-    "Privacy Policy for PG Specialized Logistics LLC detailing how customer data and electronic inquiries are managed.",
+    "Privacy Policy for TrinitySecurityHub.com operated by Trinity Logistics Solutions, LLC detailing how customer data and electronic inquiries are managed.",
 };
 
 export default function PrivacyPolicyPage() {
@@ -26,7 +26,7 @@ export default function PrivacyPolicyPage() {
             <div className={styles.sectionBlock}>
               <h2 className={styles.heading2}>1. Commitment to Privacy</h2>
               <p className={styles.paragraph}>
-                <strong>{COMPANY_INFO.name}</strong> (&ldquo;we&rdquo;, &ldquo;us&rdquo;, or &ldquo;our&rdquo;), located at {COMPANY_INFO.address.formatted}, respects your privacy and is committed to protecting the personal information you share with us through this website.
+                <strong>{COMPANY_INFO.brandName}</strong>, operated by <strong>{COMPANY_INFO.name}</strong> (&ldquo;we&rdquo;, &ldquo;us&rdquo;, or &ldquo;our&rdquo;), located at {COMPANY_INFO.address.formatted}, respects your privacy and is committed to protecting the personal information you share with us through this website.
               </p>
             </div>
 
@@ -53,7 +53,7 @@ export default function PrivacyPolicyPage() {
               <ul className={styles.list}>
                 <li>Fulfilling orders and transmitting genuine Webroot software license keys.</li>
                 <li>Responding to commercial logistics inquiries and coordinating freight proposals.</li>
-                <li>Complying with applicable commercial law and taxation regulations in the State of Texas and the United States.</li>
+                <li>Complying with applicable commercial law and taxation regulations in the State of Missouri and the United States.</li>
               </ul>
             </div>
 

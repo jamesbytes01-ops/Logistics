@@ -15,7 +15,7 @@ export function CompanyIntro() {
               Focused on Operational Integrity and Verified Service Delivery
             </h2>
             <p className={styles.leadText}>
-              <strong>{COMPANY_INFO.name}</strong> operates from {COMPANY_INFO.address.street} in Laredo, Texas — one of North America’s premier commercial transit and freight gateways.
+              <strong>{COMPANY_INFO.name}</strong> operates from {COMPANY_INFO.address.street} in Saint Louis, Missouri — a vital central freight corridor and multimodal transportation gateway.
             </p>
             <p className={styles.bodyText}>
               Our focus centers on two critical pillars of modern business continuity: structured freight transportation and distribution coordination, alongside digital endpoint security through authentic Webroot software licenses. By pairing physical logistics planning with digital cybersecurity tools, we support commercial resilience from warehouse dock to executive workstation.
@@ -68,7 +68,7 @@ export function CompanyIntro() {
                     <polyline points="20 6 9 17 4 12" />
                   </svg>
                   <div>
-                    <strong>Strategic Location:</strong> Situated in Laredo, TX (ZIP 78045), directly aligned with central commercial shipping corridors.
+                    <strong>Strategic Location:</strong> Situated in Saint Louis, MO (ZIP 63119), centrally positioned along vital interstate shipping corridors.
                   </div>
                 </div>
 

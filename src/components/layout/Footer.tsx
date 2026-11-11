@@ -14,9 +14,29 @@ export function Footer() {
           <div className={styles.brandCol}>
             <div className={styles.brandHeading}>
               <div className={styles.brandLogoMark} aria-hidden="true">
-                PG
+                <svg width="20" height="20" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <defs>
+                    <linearGradient id="shieldLeftFtr" x1="0%" y1="0%" x2="100%" y2="100%">
+                      <stop offset="0%" stopColor="#fde047" />
+                      <stop offset="100%" stopColor="#d97706" />
+                    </linearGradient>
+                    <linearGradient id="shieldRightFtr" x1="0%" y1="0%" x2="100%" y2="100%">
+                      <stop offset="0%" stopColor="#d97706" />
+                      <stop offset="100%" stopColor="#78350f" />
+                    </linearGradient>
+                    <linearGradient id="shieldCoreFtr" x1="0%" y1="0%" x2="0%" y2="100%">
+                      <stop offset="0%" stopColor="#ffffff" />
+                      <stop offset="100%" stopColor="#fef08a" />
+                    </linearGradient>
+                  </defs>
+                  <path d="M18 5L7 10v11.5L18 32V25.5l-6-6V13.5L18 10z" fill="url(#shieldLeftFtr)" />
+                  <path d="M18 5l11 5v11.5L18 32V25.5l6-6V13.5L18 10z" fill="url(#shieldRightFtr)" />
+                  <polygon points="18,12 22.5,19 18,25 13.5,19" fill="url(#shieldCoreFtr)" />
+                  <polygon points="18,12 22.5,19 18,25" fill="#000000" opacity="0.18" />
+                  <polygon points="18,17 18.5,18.5 20,19 18.5,19.5 18,21 17.5,19.5 16,19 17.5,18.5" fill="#ffffff" />
+                </svg>
               </div>
-              <span className={styles.brandName}>{COMPANY_INFO.name}</span>
+              <span className={styles.brandName}>{COMPANY_INFO.brandName}</span>
             </div>
             <p className={styles.brandDescription}>
               Professional commercial logistics coordination and authorized retail distribution of authentic Webroot cybersecurity software subscriptions.
@@ -24,11 +44,19 @@ export function Footer() {
             <div className={styles.addressBox}>
               <span className={styles.addressLabel}>Corporate Logistics Office</span>
               <span>{COMPANY_INFO.address.street}, {COMPANY_INFO.address.city}, {COMPANY_INFO.address.state} {COMPANY_INFO.address.postalCode}</span>
-              <div style={{ marginTop: "4px", paddingTop: "4px", borderTop: "1px solid rgba(255,255,255,0.08)", display: "flex", alignItems: "center", gap: "6px" }}>
-                <span className={styles.addressLabel} style={{ marginBottom: 0 }}>Email:</span>
-                <a href={`mailto:${COMPANY_INFO.email}`} className={styles.link} style={{ color: "var(--color-amber-400)", fontWeight: 500 }}>
-                  {COMPANY_INFO.email}
-                </a>
+              <div style={{ marginTop: "6px", paddingTop: "6px", borderTop: "1px solid rgba(255,255,255,0.08)", display: "flex", flexDirection: "column", gap: "5px" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "6px" }}>
+                  <span className={styles.addressLabel} style={{ marginBottom: 0 }}>Email:</span>
+                  <a href={`mailto:${COMPANY_INFO.email}`} className={styles.link} style={{ color: "var(--color-amber-400)", fontWeight: 500 }}>
+                    {COMPANY_INFO.email}
+                  </a>
+                </div>
+                <div style={{ display: "flex", alignItems: "center", gap: "6px" }}>
+                  <span className={styles.addressLabel} style={{ marginBottom: 0 }}>Phone:</span>
+                  <a href={`tel:${COMPANY_INFO.phoneRaw}`} className={styles.link} style={{ color: "var(--color-amber-400)", fontWeight: 700 }}>
+                    {COMPANY_INFO.phone}
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -85,7 +113,7 @@ export function Footer() {
 
           <div className={styles.disclaimerCardBody}>
             <p>
-              <strong>Digifortship</strong> is owned and operated by <strong>PG SPECIALIZED LOGISTICS LLC</strong>, an independent commercial reseller of genuine Webroot cybersecurity software. Webroot&reg;, Webroot SecureAnywhere&reg;, and BrightCloud&reg; are trademarks of OpenText Corporation. Digifortship is not directly affiliated with or endorsed by OpenText. Software product keys are delivered electronically under publisher EULA terms. Commercial freight managed from 402 Logistic Dr, Laredo, TX 78045.
+              <strong>{COMPANY_INFO.brandName}</strong> is owned and operated by <strong>{COMPANY_INFO.name}</strong>, an independent commercial reseller of genuine Webroot cybersecurity software. Webroot&reg;, Webroot SecureAnywhere&reg;, and BrightCloud&reg; are trademarks of OpenText Corporation. {COMPANY_INFO.brandName} is not directly affiliated with or endorsed by OpenText. Software product keys are delivered electronically under publisher EULA terms. Commercial freight managed from {COMPANY_INFO.address.formatted}.
             </p>
           </div>
         </div>
@@ -96,7 +124,7 @@ export function Footer() {
         <div className="container">
           <div className={styles.bottomBar}>
             <div>
-              &copy; 2026 Digifortship. Owned and Operated by PG SPECIALIZED LOGISTICS LLC. All Rights Reserved.
+              &copy; {currentYear} {COMPANY_INFO.brandName}. Owned and Operated by {COMPANY_INFO.name}. All Rights Reserved.
             </div>
             <div>
               Registered Corporate Address: {COMPANY_INFO.address.formatted}

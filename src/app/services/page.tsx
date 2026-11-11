@@ -7,7 +7,7 @@ import styles from "./page.module.css";
 export const metadata: Metadata = {
   title: "Commercial Logistics & Freight Services",
   description:
-    "Explore proposed commercial logistics and transportation services from PG Specialized Logistics LLC, situated at 402 Logistic Dr in Laredo, Texas.",
+    "Explore proposed commercial logistics and transportation services from Trinity Logistics Solutions, LLC, situated at 345 Marshall Avenue in Saint Louis, Missouri.",
 };
 
 export default function ServicesPage() {
@@ -20,7 +20,7 @@ export default function ServicesPage() {
             <span className={styles.kicker}>Capabilities & Proposed Scope</span>
             <h1 className={styles.title}>Commercial Logistics Services</h1>
             <p className={styles.subtitle}>
-              Structured transportation coordination, freight dispatch planning, and supply-chain support originating from the prime international logistics corridor in Laredo, Texas.
+              Structured transportation coordination, freight dispatch planning, and supply-chain support originating from our commercial logistics base in Saint Louis, Missouri.
             </p>
             <div className={styles.disclaimerBanner}>
               <strong>Notice of Proposed Capability:</strong> The categories outlined below detail our proposed commercial freight capabilities. Services are established and confirmed on a per-contract basis following carrier alignment and rate confirmation.

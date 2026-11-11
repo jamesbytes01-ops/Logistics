@@ -7,7 +7,7 @@ import styles from "../policy.module.css";
 export const metadata: Metadata = {
   title: "Refund Policy",
   description:
-    "Refund Policy for Webroot software licenses and commercial freight bookings with PG Specialized Logistics LLC.",
+    "Refund Policy for Webroot software licenses and commercial freight bookings with TrinitySecurityHub.com (Trinity Logistics Solutions, LLC).",
 };
 
 export default function RefundPolicyPage() {
@@ -27,7 +27,7 @@ export default function RefundPolicyPage() {
             <div className={styles.sectionBlock}>
               <h2 className={styles.heading2}>1. Overview</h2>
               <p className={styles.paragraph}>
-                At <strong>{COMPANY_INFO.name}</strong>, we strive to ensure total transparency regarding all transactions. Because our offerings encompass both intangible digital software licenses and contractual freight services, refund standards are structured according to the nature of the procurement.
+                At <strong>{COMPANY_INFO.brandName}</strong> (operated by <strong>{COMPANY_INFO.name}</strong>), we strive to ensure total transparency regarding all transactions. Because our offerings encompass both intangible digital software licenses and contractual freight services, refund standards are structured according to the nature of the procurement.
               </p>
             </div>
 

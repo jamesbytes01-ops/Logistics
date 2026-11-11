@@ -7,7 +7,7 @@ import styles from "./page.module.css";
 export const metadata: Metadata = {
   title: "About Our Company",
   description:
-    "Learn about PG Specialized Logistics LLC, based in Laredo, Texas — dedicated to operational precision in freight logistics and digital software distribution.",
+    "Learn about Trinity Logistics Solutions, LLC, based in Saint Louis, Missouri — dedicated to operational precision in freight logistics and digital software distribution.",
 };
 
 export default function AboutPage() {
@@ -18,9 +18,9 @@ export default function AboutPage() {
         <div className="container">
           <div className={styles.heroContent}>
             <span className={styles.kicker}>Corporate Overview</span>
-            <h1 className={styles.title}>About PG Specialized Logistics LLC</h1>
+            <h1 className={styles.title}>About Trinity Logistics Solutions, LLC</h1>
             <p className={styles.subtitle}>
-              Committed to operational discipline, direct communication, and commercial logistics coordination from Laredo, Texas.
+              Committed to operational discipline, direct communication, and commercial logistics coordination from Saint Louis, Missouri.
             </p>
           </div>
         </div>
@@ -34,7 +34,7 @@ export default function AboutPage() {
               <div>
                 <h2 className={styles.sectionBlockTitle}>Company Overview</h2>
                 <p className={styles.paragraph}>
-                  <strong>{COMPANY_INFO.name}</strong> is a specialized commercial logistics and software distribution enterprise based in Laredo, Texas. Operating at the core of the largest inland port system in the United States, our business is positioned where industrial freight flows intersect between regional transport arteries and cross-border commercial corridors.
+                  <strong>{COMPANY_INFO.name}</strong> is a specialized commercial logistics and software distribution enterprise based in Saint Louis, Missouri. Operating at a strategic commercial freight hub where industrial transit arteries connect regional and national shipping corridors, our business is positioned to deliver dependable operational planning.
                 </p>
                 <p className={styles.paragraph} style={{ marginTop: "12px" }}>
                   In tandem with freight coordination capabilities, we operate an authorized software distribution practice offering genuine Webroot cybersecurity licenses. This dual focus addresses both the tangible physical demands of freight transport and the essential digital protections required by modern commercial offices.
@@ -96,7 +96,7 @@ export default function AboutPage() {
 
               <div className={styles.detailRow}>
                 <span className={styles.detailLabel}>Corporate Jurisdiction</span>
-                <span className={styles.detailValue}>Texas, United States</span>
+                <span className={styles.detailValue}>Missouri, United States</span>
               </div>
 
               <div className={styles.detailRow}>
