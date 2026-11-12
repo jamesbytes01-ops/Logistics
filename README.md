@@ -1,6 +1,6 @@
-# TrinitySecurityHub.com — Official Website & Software Retail
+# Trinity Logistics Solutions — Official Website & Software Retail
 
-Production-grade website and Webroot cybersecurity software retail portal for **TrinitySecurityHub.com**, owned and operated by **Trinity Logistics Solutions, LLC**.
+Production-grade website and Webroot cybersecurity software retail portal for **Trinity Logistics Solutions, LLC**, accessible at **trinitysecurityhub.com**.
 
 ## Corporate Information
 

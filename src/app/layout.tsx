@@ -22,15 +22,14 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "TrinitySecurityHub.com | Freight Coordination & Webroot Software",
-    template: "%s | TrinitySecurityHub.com",
+    default: "Trinity Logistics Solutions | Freight Coordination & Webroot Software",
+    template: "%s | Trinity Logistics Solutions",
   },
   description:
-    "TrinitySecurityHub.com by Trinity Logistics Solutions, LLC — Professional logistics and transportation coordination based in Saint Louis, MO, paired with genuine Webroot cybersecurity software subscriptions.",
+    "Trinity Logistics Solutions, LLC — Professional logistics and transportation coordination based in Saint Louis, MO, paired with genuine Webroot cybersecurity software subscriptions.",
   keywords: [
-    "TrinitySecurityHub",
-    "TrinitySecurityHub.com",
-    "logistics",
+    "Trinity Logistics Solutions",
+    "Trinity Logistics",
     "freight transportation",
     "Saint Louis MO logistics",
     "Missouri logistics",
@@ -39,7 +38,7 @@ export const metadata: Metadata = {
     "cybersecurity",
     "transportation solutions",
   ],
-  authors: [{ name: "TrinitySecurityHub.com" }, { name: "Trinity Logistics Solutions, LLC" }],
+  authors: [{ name: "Trinity Logistics Solutions, LLC" }],
   icons: {
     icon: [
       { url: "/favicon.ico", sizes: "any" },

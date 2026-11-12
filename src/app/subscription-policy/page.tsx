@@ -6,7 +6,7 @@ import styles from "../policy.module.css";
 export const metadata: Metadata = {
   title: "Subscription and Renewal Policy",
   description:
-    "Information regarding Webroot subscription terms, duration periods, and renewal protocols with TrinitySecurityHub.com (Trinity Logistics Solutions, LLC).",
+    "Information regarding Webroot subscription terms, duration periods, and renewal protocols with Trinity Logistics Solutions, LLC.",
 };
 
 export default function SubscriptionPolicyPage() {

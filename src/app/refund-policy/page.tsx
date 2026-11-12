@@ -7,7 +7,7 @@ import styles from "../policy.module.css";
 export const metadata: Metadata = {
   title: "Refund Policy",
   description:
-    "Refund Policy for Webroot software licenses and commercial freight bookings with TrinitySecurityHub.com (Trinity Logistics Solutions, LLC).",
+    "Refund Policy for Webroot software licenses and commercial freight bookings with Trinity Logistics Solutions, LLC.",
 };
 
 export default function RefundPolicyPage() {

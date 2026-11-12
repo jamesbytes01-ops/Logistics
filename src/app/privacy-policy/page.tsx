@@ -6,7 +6,7 @@ import styles from "../policy.module.css";
 export const metadata: Metadata = {
   title: "Privacy Policy",
   description:
-    "Privacy Policy for TrinitySecurityHub.com operated by Trinity Logistics Solutions, LLC detailing how customer data and electronic inquiries are managed.",
+    "Privacy Policy for Trinity Logistics Solutions, LLC detailing how customer data and electronic inquiries are managed.",
 };
 
 export default function PrivacyPolicyPage() {

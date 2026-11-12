@@ -8,9 +8,9 @@ import { FeaturedShop } from "@/components/home/FeaturedShop";
 import { ContactCallout } from "@/components/home/ContactCallout";
 
 export const metadata: Metadata = {
-  title: "TrinitySecurityHub.com | Moving Business Forward with Reliable Logistics",
+  title: "Trinity Logistics Solutions | Moving Business Forward with Reliable Logistics",
   description:
-    "TrinitySecurityHub.com by Trinity Logistics Solutions, LLC — Freight transportation coordination and commercial logistics solutions based in Saint Louis, MO, paired with genuine Webroot cybersecurity software subscriptions.",
+    "Trinity Logistics Solutions, LLC — Freight transportation coordination and commercial logistics solutions based in Saint Louis, MO, paired with genuine Webroot cybersecurity software subscriptions.",
 };
 
 export default function HomePage() {

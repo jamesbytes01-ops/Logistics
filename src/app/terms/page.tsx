@@ -6,7 +6,7 @@ import styles from "../policy.module.css";
 export const metadata: Metadata = {
   title: "Terms and Conditions",
   description:
-    "Terms and Conditions governing the use of the TrinitySecurityHub.com website and software procurement.",
+    "Terms and Conditions governing the use of the Trinity Logistics Solutions website and software procurement.",
 };
 
 export default function TermsPage() {

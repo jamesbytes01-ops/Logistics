@@ -36,7 +36,7 @@ export function Footer() {
                   <polygon points="18,17 18.5,18.5 20,19 18.5,19.5 18,21 17.5,19.5 16,19 17.5,18.5" fill="#ffffff" />
                 </svg>
               </div>
-              <span className={styles.brandName}>{COMPANY_INFO.brandName}</span>
+              <span className={styles.brandName}>{COMPANY_INFO.name}</span>
             </div>
             <p className={styles.brandDescription}>
               Professional commercial logistics coordination and authorized retail distribution of authentic Webroot cybersecurity software subscriptions.
@@ -113,7 +113,7 @@ export function Footer() {
 
           <div className={styles.disclaimerCardBody}>
             <p>
-              <strong>{COMPANY_INFO.brandName}</strong> is owned and operated by <strong>{COMPANY_INFO.name}</strong>, an independent commercial reseller of genuine Webroot cybersecurity software. Webroot&reg;, Webroot SecureAnywhere&reg;, and BrightCloud&reg; are trademarks of OpenText Corporation. {COMPANY_INFO.brandName} is not directly affiliated with or endorsed by OpenText. Software product keys are delivered electronically under publisher EULA terms. Commercial freight managed from {COMPANY_INFO.address.formatted}.
+              <strong>{COMPANY_INFO.name}</strong> is an independent commercial reseller of genuine Webroot cybersecurity software. Webroot&reg;, Webroot SecureAnywhere&reg;, and BrightCloud&reg; are trademarks of OpenText Corporation. {COMPANY_INFO.name} is not directly affiliated with or endorsed by OpenText. Software product keys are delivered electronically under publisher EULA terms. Commercial freight managed from {COMPANY_INFO.address.formatted}.
             </p>
           </div>
         </div>
@@ -124,7 +124,7 @@ export function Footer() {
         <div className="container">
           <div className={styles.bottomBar}>
             <div>
-              &copy; {currentYear} {COMPANY_INFO.brandName}. Owned and Operated by {COMPANY_INFO.name}. All Rights Reserved.
+              &copy; {currentYear} {COMPANY_INFO.name}. All Rights Reserved.
             </div>
             <div>
               Registered Corporate Address: {COMPANY_INFO.address.formatted}

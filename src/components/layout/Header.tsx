@@ -77,8 +77,8 @@ export function Header() {
               </svg>
             </div>
             <div className={styles.brandText}>
-              <span className={styles.brandName}>{COMPANY_INFO.brandName}</span>
-              <span className={styles.brandSub}>{COMPANY_INFO.name} &bull; SAINT LOUIS, MO</span>
+              <span className={styles.brandName}>TRINITY LOGISTICS SOLUTIONS</span>
+              <span className={styles.brandSub}>LLC &bull; SAINT LOUIS, MO</span>
             </div>
           </Link>
 

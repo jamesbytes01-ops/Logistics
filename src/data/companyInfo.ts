@@ -1,8 +1,8 @@
 export const COMPANY_INFO = {
   name: "Trinity Logistics Solutions, LLC",
   shortName: "Trinity Logistics Solutions",
-  brandName: "TrinitySecurityHub.com",
-  websiteName: "TrinitySecurityHub.com",
+  brandName: "Trinity Logistics Solutions",
+  websiteName: "Trinity Logistics Solutions",
   domain: "trinitysecurityhub.com",
   email: "contact@TrinitySecurityHub.com",
   phone: "+1(805) 243-3451",
